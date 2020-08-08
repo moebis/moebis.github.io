@@ -6,17 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About | Urban Template</title>
+<title>Contact | Urban Template</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="About" />
+<meta property="og:title" content="Contact" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Jekyll template with example content for a web agency." />
 <meta property="og:description" content="Jekyll template with example content for a web agency." />
-<link rel="canonical" href="https://teal-worm.cloudvent.net/about/" />
-<meta property="og:url" content="https://teal-worm.cloudvent.net/about/" />
+<link rel="canonical" href="https://teal-worm.cloudvent.net/contact/" />
+<meta property="og:url" content="https://teal-worm.cloudvent.net/contact/" />
 <meta property="og:site_name" content="Urban Template" />
 <script type="application/ld+json">
-{"description":"Jekyll template with example content for a web agency.","@type":"WebSite","headline":"About","sameAs":["https://github.com/CloudCannon/urban-jekyll-template"],"name":"Urban Template","url":"https://teal-worm.cloudvent.net/about/","@context":"https://schema.org"}</script>
+{"description":"Jekyll template with example content for a web agency.","@type":"WebPage","headline":"Contact","url":"https://teal-worm.cloudvent.net/contact/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 		<link type="application/atom+xml" rel="alternate" href="https://teal-worm.cloudvent.net/feed.xml" title="Urban Template" />
@@ -60,13 +60,13 @@
 			
 
 			
-			<li><a href="/about/" class=" active" >About</a></li>
+			<li><a href="/about/" class="" >About</a></li>
 		
 			
 			
 
 			
-			<li><a href="/contact/" class="" >Contact</a></li>
+			<li><a href="/contact/" class=" active" >Contact</a></li>
 		
 	</ul>
 </nav>
@@ -76,40 +76,88 @@
 		<section class="hero diagonal">
 	<div class="container" >
 		
-			<h2>Our team</h2>
+			<h2>Get in touch today</h2>
 		
 		
-			<p class="subtext">Meet our efficient and qualified team.</p>
+			<p class="subtext">We'd love to help your business.</p>
 		
 	</div>
 </section>
 
-<section class="diagonal patterned">
+<section class="diagonal">
 	<div class="container">
-	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Manage Staff members</a></p>
-		<ul class="image-grid">
-			
-				<li><a target="_blank" href="https://twitter.com/CloudCannonApp">
-	<div class="square-image"><img src="https://unsplash.it/600/503?image=1025&a=.png" alt="Anna Thompson"/></div>
-	<div class="details">
-		<div class="name">Anna Thompson</div>
-		<div class="position">Developer</div>
-	</div>
-</a>
-</li>
-			
-				<li><a target="_blank" href="https://twitter.com/CloudCannonApp">
-	<div class="square-image"><img src="https://unsplash.it/600/503?image=1062&a=.png" alt="James Lopez"/></div>
-	<div class="details">
-		<div class="name">James Lopez</div>
-		<div class="position">Designer</div>
-	</div>
-</a>
-</li>
-			
-		</ul>
+		<form action="/contact-success/" method="post" class="contact-form">
+			<input type="hidden" name="_to" value="support@example.com" />
+			<input type="text" name="_gotcha" style="display: none;" />
+
+			<div class="halves">
+				<div>
+					<label for="name">First Name</label>
+					<input type="text" name="first-name" id="first-name" placeholder="John" />
+				</div>
+
+				<div>
+					<label for="name">Last Name</label>
+					<input type="text" name="last-name" id="last-name" placeholder="Doe" />
+				</div>
+			</div>
+
+			<label for="email">Email Address</label>
+			<input type="email" name="email" id="email" placeholder="john@example.com" required />
+
+			<label for="message">Message</label>
+			<textarea name="message" id="message" placeholder="Hi There..."></textarea>
+
+			<input type="submit" value="Send Message" />
+		</form>
 	</div>
 </section>
+
+<section class="diagonal map">
+	<div id="gmap_canvas"></div>
+</section>
+
+<section class="diagonal">
+	<div class="container halves aligned-top">
+		<div>
+			<h3>Address</h3>
+				<address><a target="_blank" href="https://www.google.com/maps/place/1+George+Street%2C+Dunedin%2C+New+Zealand">1 George Street, <br>Dunedin, <br>New Zealand</a></address>
+		</div>
+		<div>
+			<h3>Email</h3>
+			<p><a href="mailto:contact@example.com">contact@example.com</a></p>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	window.mapData = {"latitude":-45.8787605,"longitude":170.5027976,"address":"1 George Street, Dunedin, New Zealand","zoom":13};
+
+	function initMap() {
+		var myOptions = {
+			scrollwheel: false,
+			draggable: false,
+			panControl: false,
+			disableDefaultUI: true,
+			styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}],
+			zoom: window.mapData.zoom,
+			maxZoom: window.mapData.zoom,
+			minZoom: window.mapData.zoom,
+			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+		marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
+		});
+
+		google.maps.event.addDomListener(window, "resize", function () {
+			map.setCenter(myOptions.center);
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=&amp;callback=initMap"></script>
 
 
 

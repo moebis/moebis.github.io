@@ -1,263 +1,266 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
 
-    <!-- Document Settings -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Base Meta -->
-    <!-- dynamically fixing the title for tag/author pages -->
+		<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Urban | Urban Template</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Urban" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jekyll template with example content for a web agency." />
+<meta property="og:description" content="Jekyll template with example content for a web agency." />
+<link rel="canonical" href="https://teal-worm.cloudvent.net/" />
+<meta property="og:url" content="https://teal-worm.cloudvent.net/" />
+<meta property="og:site_name" content="Urban Template" />
+<script type="application/ld+json">
+{"description":"Jekyll template with example content for a web agency.","@type":"WebSite","headline":"Urban","sameAs":["https://github.com/CloudCannon/urban-jekyll-template"],"name":"Urban Template","url":"https://teal-worm.cloudvent.net/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
+		<link type="application/atom+xml" rel="alternate" href="https://teal-worm.cloudvent.net/feed.xml" title="Urban Template" />
 
+		<link rel="stylesheet" href="/css/screen.css">
 
-    <title>moebis</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Styles'n'Scripts -->
-    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <style>.hljs { background: none; }</style>
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
 
-    <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="all things curious..." />
-    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
+		
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="company-name"><a href="/"><img src="/images/logo.svg" alt="Urban" width="150"></a></h1>
+				<nav>
+	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+	<ul>
+		
+			
+			
 
-     <!--title below is coming from _includes/dynamic_title-->
-    <meta property="og:site_name" content="moebis" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="moebis" />
-    <meta property="og:description" content="all things curious..." />
-    <meta property="og:url" content="/" />
-    <meta property="og:image" content="/assets/images/blog-cover.jpg" />
-    <meta property="article:publisher" content="https://www.facebook.com/moebis" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="moebis" />
-    <meta name="twitter:description" content="all things curious..." />
-    <meta name="twitter:url" content="/" />
-    <meta name="twitter:image" content="/assets/images/blog-cover.jpg" />
-    <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="moebis" />
-    <meta name="twitter:site" content="@moebis" />
-    <meta name="twitter:creator" content="@moebis" />
-    <meta property="og:image:width" content="2000" />
-    <meta property="og:image:height" content="666" />
+			
+			<li><a href="/portfolio/" class="" >Portfolio</a></li>
+		
+			
+			
 
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Website",
-    "publisher": {
-        "@type": "Organization",
-        "name": "moebis",
-        "logo": "/assets/images/blog-icon.png"
-    },
-    "url": "/",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/assets/images/blog-cover.jpg",
-        "width": 2000,
-        "height": 666
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/"
-    },
-    "description": "all things curious..."
-}
-    </script>
+			
+			<li><a href="/blog/" class="" >Blog</a></li>
+		
+			
+			
 
-    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
-    <script type="text/javascript">
-    ghost.init({
-    	clientId: "ghost-frontend",
-    	clientSecret: "f84a07a72b17"
-    });
-    </script> -->
+			
+			<li><a href="/about/" class="" >About</a></li>
+		
+			
+			
 
-    <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="moebis" href="/feed.xml" />
-
-
-</head>
-<body class="home-template">
-
-    <div class="site-wrapper">
-        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
-
-<!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer " style="background-image:  url(/assets/images/blog-cover.jpg) ">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                
-                    <img class="site-logo" src="/assets/images/blog-icon.png" alt="moebis"/>
-                
-            </h1>
-            <h2 class="site-description">all things curious...</h2>
-        </div>
-        <nav class="site-nav">
-    <div class="site-nav-left">
-        
-        
-            <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
-</ul>
-
-        
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-            
-                <a class="social-link social-link-fb" href="https://facebook.com/moebis" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
-</a>
-            
-            
-                <a class="social-link social-link-tw" href="https://twitter.com/moebis" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
-</a>
-            
-        </div>
-        
-    </div>
+			
+			<li><a href="/contact/" class="" >Contact</a></li>
+		
+	</ul>
 </nav>
 
-    </div>
-</header>
+			</div>
+		</header>
+		<section class="hero diagonal">
+	<div class="container">
+		<h2 class="editable" data-cms-source="/index.html" data-cms-index="0">We build websites</h2>
+		<p class="subtext editable" data-cms-source="/index.html" data-cms-index="1">This is the <strong>Urban</strong> template from <a href="https://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
+		<p><a class="button alt" href="/contact/">Contact Us</a></p>
+	</div>
+</section>
 
-<!-- The main content area -->
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable" data-cms-source="/index.html" data-cms-index="2">Some of our work</h3>
+			<p class="editable" data-cms-source="/index.html" data-cms-index="3">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
+			<p class="editable" data-cms-source="/index.html" data-cms-index="4"><a href="/portfolio/">View Full Portfolio &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				
+					<li><a href="/clients/cause/"><img src="/images/clients/cause.jpg" /></a></li>
+				
+					<li><a href="/clients/edition/"><img src="/images/clients/edition.png" /></a></li>
+				
+					<li><a href="/clients/frisco/"><img src="/images/clients/frisco.jpg" /></a></li>
+				
+					<li><a href="/clients/hydra/"><img src="/images/clients/hydra.png" /></a></li>
+				
+			</ul>
+		</div>
+	</div>
+</section>
 
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            
-    <article class="post-card home-template">
-        
-            <a class="post-card-image-link" href="/an-american-abroad-in-slovakia">
-                <div class="post-card-image" style="background-image: url(/assets/images/an-american-abroad-in-slovakia-featured.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/an-american-abroad-in-slovakia">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Travel</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">An American Abroad in Slovakia</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    <p>There is the small bubble with your friends and family, the medium sized bubble, which consists of your community and locality and the large bubble, your culture and country. I lived in the</p>
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </footer>
-        </div>
-    </article>
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;" /></li>
+				<li><img src="/images/jekyll-logo-black-red-transparent.png" width="300" /></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable" data-cms-source="/index.html" data-cms-index="5">Latest software, greatest perfomance</h3>
+			<p class="editable" data-cms-source="/index.html" data-cms-index="6">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
+		</div>
+	</div>
+</section>
 
 
-        </div>
+		<footer class="diagonal">
+			<div class="container">
+				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Update Footer Sections</a></p>
 
-    </div>
-</main>
+				<div class="footer-columns">
+					
+						<ul class="footer-links">
+							<li>
+								<h2>Pages</h2>
+							</li>
+							
+								<li>
+									<a  href="/" >
+										
+
+										Home
+									</a>
+								</li>
+							
+								<li>
+									<a  href="/portfolio/" >
+										
+
+										Portfolio
+									</a>
+								</li>
+							
+								<li>
+									<a  href="/blog/" >
+										
+
+										Blog
+									</a>
+								</li>
+							
+								<li>
+									<a  href="/about/" >
+										
+
+										About
+									</a>
+								</li>
+							
+								<li>
+									<a  href="/contact/" >
+										
+
+										Contact
+									</a>
+								</li>
+							
+						</ul>
+					
+						<ul class="footer-links">
+							<li>
+								<h2>Social</h2>
+							</li>
+							
+								<li>
+									<a target="_blank" href="https://facebook.com/cloudcannon/" class="facebook-icon">
+										
+											
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" /></svg>
+	
+
+										
+
+										Facebook
+									</a>
+								</li>
+							
+								<li>
+									<a target="_blank" href="https://twitter.com/cloudcannon/" class="twitter-icon">
+										
+											
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" /></svg>
+	
+
+										
+
+										Twitter
+									</a>
+								</li>
+							
+								<li>
+									<a target="_blank" href="https://instagram.com/" class="instagram-icon">
+										
+											
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+	
+
+										
+
+										Instagram
+									</a>
+								</li>
+							
+								<li>
+									<a target="_blank" href="https://nz.linkedin.com/company/cloud-cannon" class="linkedin-icon">
+										
+											
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19,19H16V13.7A1.5,1.5 0 0,0 14.5,12.2A1.5,1.5 0 0,0 13,13.7V19H10V10H13V11.2C13.5,10.36 14.59,9.8 15.5,9.8A3.5,3.5 0 0,1 19,13.3M6.5,8.31C5.5,8.31 4.69,7.5 4.69,6.5A1.81,1.81 0 0,1 6.5,4.69C7.5,4.69 8.31,5.5 8.31,6.5A1.81,1.81 0 0,1 6.5,8.31M8,19H5V10H8M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" /></svg>
+	
+
+										
+
+										LinkedIn
+									</a>
+								</li>
+							
+						</ul>
+					
+
+					<ul class="footer-links">
+						<li>
+							<h2>Urban Ltd</h2>
+						</li>
+						<li>Bringing the best experiences to the web for you and your clients.</li>
+						<li><a href="/feed.xml">
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+
+ Subscribe with RSS</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="legal-line">
+				<p class="container">
+					&copy; 2020 Urban Ltd
+					&bull;
+					Template by <a href="https://cloudcannon.com/">CloudCannon</a>
+				</p>
+			</div>
+		</footer>
 
 
-        <!-- Previous/next page links - displayed on every page -->
-        
-
-        <!-- The footer at the very bottom of the screen -->
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="/">moebis</a> &copy; 2018</section>
-                <section class="poweredby">&nbsp;</section>
-                <nav class="site-footer-nav">
-                    <a href="/">Latest Posts</a>
-                    <a href="https://facebook.com/moebis" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://twitter.com/moebis" target="_blank" rel="noopener">Twitter</a>
-                </nav>
-            </div>
-        </footer>
-
-    </div>
-
-    <!-- The big email subscribe modal content -->
-    
-
-    <!-- highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-    <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    });</script>
-
-    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
-
-
-    <!-- Paginator increased to "infinit" in _config.yml -->
-    <!-- if paginator.posts  -->
-    <!-- <script>
-        var maxPages = parseInt('1');
-    </script>
-    <script src="/assets/js/infinitescroll.js"></script> -->
-    <!-- /endif -->
-
-    
-
-
-    <!-- Add Google Analytics  -->
-    <!-- Google Analytics Tracking code -->
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-142698-5', 'auto');
-  ga('send', 'pageview');
-
- </script>
-
-
-    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-    
-
-    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
-    <!-- ghost_foot -->
-
-</body>
+		<script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
+	</body>
 </html>
